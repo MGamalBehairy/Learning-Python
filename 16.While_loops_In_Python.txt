@@ -1,0 +1,45 @@
+# While Loop    => Execute some Condition While Some Condition remains True
+
+name = input("Enter your name: ")
+
+if name == "":      # => This means the user didn't type anything
+    print("You didn't Enter your name")
+else:
+    print(f"Hello {name}")
+
+# The Above code will execute only one time
+
+# so we need while loop to execute many times as many as the user didn't type his/her name
+while name == "":
+    print("You didn't type your name")
+    name = input("Enter Your name: ")
+print(f"Hello {name}")
+
+#===================================================================================
+# Exercise 2
+
+age = int(input("Enter your age: "))
+while age < 0:
+    print("Enter your correct age")
+    age = int(input("Enter your age: ") )
+print(f"You're {age} years old")
+
+#===================================================================================
+# Exercise 3
+
+food = input("Enter a food you like (press \"q\" to quit ): ")
+
+while not food == "q" or "Q":
+    print(f"You like {food}")
+    food = input("Enter a food you like (press \"q\" to quit ): ")
+print("Bye")
+
+#==================================================================================
+# Exercise 4
+
+num = int(input("Enter a number between 1 - 10: "))
+while num < 1 or num > 10:
+    print(f"{num} is not valid")
+    num = int(input("Enter a number between 1 - 10: "))
+print(f"Your number is {num}")
+

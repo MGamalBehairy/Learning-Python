@@ -1,0 +1,30 @@
+# Calculate the Interest Compund
+
+principle = 0
+rate = 0
+time = 0
+
+principle = float(input("Enter the Principle: "))
+while principle <= 0:
+    print("The Principle should be above 0")
+    principle =float(input("Enter the Principle: "))
+
+rate = float(input("Enter the Rate: "))
+while rate <= 0:
+    print("The Interest rate should be above 0")
+    rate = float(input("Enter the rate: "))
+
+time = int(input("Enter the Time: "))
+while True:                                 # Note we used here another solution using "BREAK" and the while is True, to know how to exit from a loop
+    time =int(input("Enter the time: "))
+    if time < 0:
+        print("The time should be above 0")
+    else:
+        break
+
+print(f"The Principle is: {principle}\nThe Interest Rate is {rate}\nThe Time is {time}")
+
+total = principle*pow(1+rate/100, time)
+
+print(f"Balance after {time} year/s is: ${total:.2f}")
+

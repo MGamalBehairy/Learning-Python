@@ -1,0 +1,115 @@
+#increament
+
+friends = 0
+
+#increment by 1
+firends = friends + 1
+#OR
+friends += 1
+
+print(friends)
+
+===============================================
+#decrement
+
+toys = 0
+#decrement by 2
+toys = toys - 2
+#OR 
+toys -= 2
+
+print(toys)
+
+================================================
+#Multiplication
+friends = 5
+
+friends = friends * 3
+#OR 
+friends *= 3
+
+print(friends)
+
+================================================
+#Division
+price = 10
+price /= 2
+
+==============================================
+#power
+
+price = 5
+price **= 2
+
+print(price)	#5 * 5 => 25
+
+=================================================
+#Modulus	=> it will give us the reminder of the division
+
+friends = 10
+friends %= 3
+
+print(friends) # 10 % 3 => 1
+
+=================================================
+#round()  built-in function
+# it return the nearest value =>  3.14 = 3     , 5.57 = 6 
+
+x = 3.14
+result = round(x)
+print(x)
+
+=================================================
+obs()  built-in function
+# to get the absolute value
+x = -4
+result = obs(x)
+print(result)	# => 4
+
+=========================================
+# pow()  built-in function
+
+result = pow(4,3)
+print(result)	# =>  4 * 4 * 4 = 64
+
+===========================================
+# max() built-in function
+# to return the maximum value between a varius of values
+
+# min() => return the minimum value
+x = 3.14
+y = 6
+z = 4
+max_result = max(x, y ,z)
+min_result = min(x, y, z)
+print(f"The max value is: {max_result}, and the minimum value is: {min_result}")
+
+====================================================================================================
+# math Library
+import math
+
+print(math.pi)
+print(math.e)
+print(math.sqrt(9))
+print(math.ceil(3.1)) 	# 	=>  4   ceil always round floating point number up
+print(math.floor(3.9))  #	=>  3   , floor always get the floating point number (down)
+
+====================================================================================================
+# program to get the circumference
+import math
+radius = float(input("Enter the radius of a circle"))
+circumference = 2 * math.pi * radius
+area = math.pi * pow(radius,2)
+print(f"The circumference is: {round(circumference), 2} cm")	# =>  round(x, 2) => get only two float point
+print(f"The are of the circle is: {area}cm^2 (alt + 0178)")
+
+====================================================================================================
+# program to calculate the hypotenuse of a right angles triangle
+
+import math
+a = float(input("Enter side A: "))
+b = float(input("Enter side B: "))
+
+c = math.sqrt(pow(a, 2) + pow(b, 2))
+print(f"The hypotenuse of a right angle triangle is: {round(c,2)}")
+

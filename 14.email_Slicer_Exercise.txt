@@ -1,0 +1,17 @@
+# Email Slicer Exercise
+# index()   => Return a numebr of the character
+
+email = input("Enter your email: ")
+
+# Bro123@gmail.com
+
+# first split the email to username and domain
+
+index = email.index("@")    # => return the index number of "@"
+
+username = email[: index]
+domain = email[index + 1:] 
+
+print(f"Username is: {username} and the domain name is: {domain}")
+
+

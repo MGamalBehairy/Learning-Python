@@ -1,0 +1,37 @@
+# Random Guessing Game 
+
+import random
+
+lowest_number = 1
+highest_number = 5
+
+guesses = 0
+
+answer = random.randint(lowest_number, highest_number)
+
+while True:
+    guess = input("Enter the Number: ")
+    if guess.isdigit():
+        guess = int(guess)
+        guesses += 1
+    else:
+        print(f"Invalid! please Enter number between {lowest_number} and {highest_number}")
+        continue
+    # if the guess number was less or greater then the valid inputs 
+    if guess < lowest_number or guess > highest_number:
+        print("Invalied number!")
+        print("That number is out of range!")
+        continue
+
+    if guess < answer:
+        print("Too low! Try again!")
+    elif guess > answer:
+        print("Too high! Try again!")
+    else:
+        print(f"failed! The number was {answer}")
+    ask = input("play again?! (y/n)").lower()
+    if ask == 'y':
+        continue
+    else:
+        break
+print()

@@ -1,0 +1,35 @@
+Type Casting: is to convert a variable from a data type to another
+str(), int(), float(), bool
+
+name = "Mohamed"
+age = 23
+gpa = 2.5
+
+print(type(name))
+
+gpa = int(gpa) 	=> convert from float to integer
+print(gpa)
+
+Imp Ex.
+age = 25
+age = str(age)
+age += 1
+print(age)	=>  Error , to make it correct , insert "double quote" between 1
+
+age += "1"
+
+print(age)	=> 251	=> it will contacinate the 1 as a string not integer
+
+
+Another Ex. for Boolean
+
+name = "Mohamed"
+name = bool(name)
+print(name)	=> True
+
+name2 = ""
+name2 = bool(name2)
+print(name2)	=> False		=> it will return false if the variable is Empty or Zero
+
+
+

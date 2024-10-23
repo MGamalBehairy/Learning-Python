@@ -1,0 +1,30 @@
+# Function  => A block of Reusable Code
+#              place () after the function name to invoke it
+
+def happy_birthday():
+    print("Happy birthday to you!")
+    print("You are Yound!")
+    print("Wish you all the best!")
+
+happy_birthday()
+happy_birthday()
+
+# use Parameter =>  in the defenision of the functio i self
+#     Argument  => user when we call/invoke the function
+print("--------------------------------------------")
+def test_function(name):
+    print(f"Hello {name}")
+
+def test_function_age(name, age):
+    print(f"Hello {name}")
+    print(f"You are {age} years old!")
+
+test_function("Mohamed")
+test_function_age("Ahmed", 20)
+
+# return
+def create_name(first, last):
+    first = first.capitalize()
+    last  = last.capitalize()
+    return first + " " + last
+    

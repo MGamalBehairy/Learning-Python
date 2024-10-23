@@ -1,0 +1,40 @@
+# indexing  => allow us to access elements of a sequence using [] # known as (Indexing Operator)
+#   Archetecture           [start : end : step]
+# NOTE: The END index is not printing
+# for Example if you want to print the 5th index, you need to type 6 not 5
+# [start : end + 1 : step] 
+
+credit_number = "1234-5678-9012"
+# to find the First string in the variable
+print(credit_number[0])
+
+# find the 6th charcter of a variable
+print(credit_number[5])
+
+
+# if you want to print from 0 character to 6th character
+print(credit_number[0:5])
+
+# you don't need to type 0 if you want to start from it
+print(credit_number[: 5])
+
+# print to the last
+print(credit_number[2:])    # don't type END index
+
+# if you want to add step 2, (print every two characters)
+print(credit_number[0 : 5  : 2])
+
+# print last index
+print(credit_number[-1])
+
+# print last before index
+print(credit_number[-2])
+
+# print last 4 digits from a credit card
+last_digits = credit_number[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digits}")
+
+# reverse the String
+print(credit_number[::-1])      # put step -1
+
+

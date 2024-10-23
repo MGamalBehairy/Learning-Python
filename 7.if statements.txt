@@ -1,0 +1,38 @@
+# if => Do some code only IF some condition is True
+# Else => Do something else 
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+	print("You are signed up!")
+elif age < 0:
+	print("You haven't born yet :)")
+elif age >= 100:
+	print("You are to old to sign up!")
+else:
+	print("You must be 18+ to sign upa")
+
+
+==================================================================
+response = input("would you like food (Y/N): ")
+if response=='Y' or 'y':
+    print("Great! You're Normal Person")
+else:
+    print("You need to go to the doctor now!")
+
+========================================================
+for_sale = True
+
+if for_sale:
+	print("This Item is for sale")
+else:
+	print("This Item is NOT for sale!")
+
+==================================================================
+online = False
+
+if online:
+	print("The user is Online")
+else:
+	print("The user is offline")
+

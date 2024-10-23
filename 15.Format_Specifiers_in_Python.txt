@@ -1,0 +1,23 @@
+# format Specifiers = {Value: flags}    => Format the value based on what flags are inserted
+
+price1 = 5.64353
+price2 = 41.64
+price3 = -42.424
+
+print(f"Price 1 is: {price1:.2f}")     # => print only two decimal point number
+
+print(f"Price 2 is: {price2:10}")      # => The value has a total 10 spaces to display the output
+
+print(f"price 3 is: {price3:010}")     # -> Zero Padded with total 10 spaces
+
+print(f"price 3 is: {price3:<10}")     # => To left Justify value
+
+print(f"price 3 is: {price3:>10}")     # => To Right Justify value (also with 10 spaces)
+
+print(f"price 3 is: {price3:^10}")     # => To Center Allign (make the value centered)
+
+print(f"price 3 is: {price2:+10}")     # => To print the value with the Sign (Positive ot Negative)
+
+print(f"price 3 is: {price3:,}")       # => to Seperate the value each 3 digit (every thousnad)
+
+print(f"price 3 is: {price1:+,.2f}")   # => Combination between many things

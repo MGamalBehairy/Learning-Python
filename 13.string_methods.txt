@@ -1,0 +1,85 @@
+# len() => find the length of word or string
+name = input("Enter your name: ")
+
+result = len(name)  #=> to calculate the number of characters 
+print(result)
+
+#============================================================
+# find()  => built-in function to find the first occurrence/Character
+full_name = input("Enter your full name: ")
+result_name = full_name.find(" ")    #=> find any space in the name, start with index 0
+
+print(result_name)
+
+#===========================================================
+# rfind()   => r: stands for revers , find the last occurrence or character
+name2 = "Ahmed Gamal" # note there are 2 "m"
+result = name2.rfind("m")   # it will print the last "m"
+print(result)
+
+print(name2.rfind("q"))     #=> there is no "q" character, so it will return "-1"
+
+#=================================================================================
+# capitalize()  => only capitalize the first character in each line
+name4 = "mohamed Gamal ibrahim Behery"  #=> it will only capitalize the first character in each line
+print(name4.capitalize())
+
+#======================================================================================
+# upper()   => will capitalize all characters in all words 
+name5 = "Mohamed gamal ibrahim behery"
+print(name5.upper())
+
+#====================================================================================
+# lower()
+name6 = "Mohamed GAMAL Ibrahim Behery"
+print(name6.lower())
+
+#===================================================
+# isdigit() =>  will return "True" if a string contains # only digit in a string Format OR  "False"
+name7 = "Mohamed Gamal"
+age = "14"
+print(name7.isdigit())  #=> "False", becuase it contains alphabetical characters
+print(age.isdigit())
+
+#===================================================================================
+# isalpha()     => space is not from alphabetical
+name9 = input("Enter Your name: ")
+print(name9.isalpha())
+
+#===================================================
+# count()   => To count how many characters are in the string or statement
+phone_number = input("Enter Your phone number: ")
+print(phone_number.count("-"))
+
+#===================================================
+# replace() => replace a specific character to another  (will replace all characters not just 1)
+phone_number1 = input("Enter Your Phone number: ")
+print(phone_number1.replace("-",">")) 
+
+#========================================================
+# help()    => to get help from python 
+
+# print(help(str))
+# print(help(int))
+
+#==========================================================
+
+# Program    =>  Validate user input exercise
+# 1. Username is no more than 12 characters
+# 2.Username must not contain spaces
+# 3. username must not contain digits
+
+# chars_count = int(username)
+   
+username = input("Enter your username: ")
+if len(username) > 12:
+    print("Enter only 12 characters")
+elif username.find(" ") != -1:
+    print("Spaces are not Valid")
+#OR 
+# elif " " in username:
+#   print("Spaces are not valid")
+elif not username.isalpha():
+    print("Username must not contain any digits")
+else:
+    print(f"Welcome {username}")

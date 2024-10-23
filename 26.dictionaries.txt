@@ -1,0 +1,48 @@
+# Dictionary = A collection of {Key: Value} pairs
+#              Ordered and Changeable.  No Duplicates
+
+# Ex.    ID: Name ,     Item:Price     
+
+capitals = {"Egypt": "Cairo",
+            "India": "New Delhi",
+            "China": "Beijeing",
+            "Russia": "Moscow"}
+
+# To print All Attributes and methods of the dictionary
+# print(dir(capitals))
+# Or to get help
+# print(help(capitals))
+
+print(capitals.get("Egypt"))
+print(capitals.get("Japan"))
+# To add/update key use => update({key:value}) method 
+capitals.update({"Germany": "Berlin"})
+print(capitals.get("Germany"))
+
+capitals.update({"Egypt": "New Capital"})
+print(capitals.get("Egypt"))
+
+# pop() method  => To remove key pair (key & Value) 
+capitals.pop("China")
+print(capitals.get("China"))
+
+# popitem() method  =>  to remove last item in the dictionary, you don't have to pass a key, empty ()
+print(capitals.popitem())
+
+# clear() method => to clear the dictionary
+# capitals.clear()
+
+# keys() method => To get all KEYS without Values 
+print(capitals.keys())  # note: U used clear() method so you will get empty result
+
+for key in capitals.keys():
+    print(key)
+
+# values() method   => To print all just VALUES in certain dictionary
+print(capitals.values())
+
+# items() method => get result of the dictionay (Keys: Values) 2D list of Tuples
+print(capitals.items())
+
+for key, value in capitals.items():
+    print(f"{key}: {value}")

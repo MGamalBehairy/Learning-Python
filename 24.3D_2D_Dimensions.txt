@@ -1,0 +1,61 @@
+# 2D Dimension
+fruits = ["Apple", "Orange", "Banana", "Coconut"]
+vegetables = ["Celery", "Carrots", "Potatoes"]
+meats = ["Chicken", "Fish", "Turkey"]
+
+groceries = [fruits, vegetables, meats]
+
+print(groceries[0]) # it will print the first Entire row
+
+print(groceries[1]) # it will print All second Row, to print a specific Item, you need to specify a row and column
+
+# To print Specifc Item, you need to specify a row and Column
+print(groceries[0][1])
+
+
+#   ======================================================================================
+
+# antoher way to make a 2D Dimension
+# replace the fruit in groceries with actual items/list in fruits and so on ....
+
+groceries2 = [["Apple", "Orange", "Banana", "Coconut"],
+              ["Celery", "Carrots", "Potatoes"],
+              ["Chicken", "Fish", "Turkey"]]
+# if you want to iterate over this 2D List, You can use nested Loops
+for x in groceries2:
+    print(x)        # this will only print it as a List not separate Items
+
+print("===========================================")
+
+for collection in groceries2:
+    for food in collection:
+        print(food, end=" ")
+
+# Also you can make 2D Dimension of Tupels
+groceries_tuple = [("Apple", "Orange", "Banana", "Coconut"),
+              ("Celery", "Carrots", "Potatoes"),            #   => [( )]
+              ("Chicken", "Fish", "Turkey")]
+
+# even you can make tuple of tuple
+
+groceries_tuple2 = (("Apple", "Orange", "Banana", "Coconut"),
+              ("Celery", "Carrots", "Potatoes"),            #   => (( ))
+              ("Chicken", "Fish", "Turkey"))        
+# or make set with tuple
+groceries_set = ({"Apple", "Orange", "Banana", "Coconut"},  # =>   ({ })
+              {"Celery", "Carrots", "Potatoes"},
+              {"Chicken", "Fish", "Turkey"})
+
+# =================================================================================
+
+# print like dial up or numbers call
+
+num_pad = ((1,2,3), 
+           (4,5,6), 
+           (7,8,9), 
+           ("*",0,"#"))
+
+for row in num_pad:
+    for num in row:
+        print(num, end=" ")
+    print()

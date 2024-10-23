@@ -1,0 +1,40 @@
+# for loops => Execute a block of code with fixed number of times.
+#              You can iterate over a range, string, sequence, etc.
+
+for x in range(1, 11):  #NOTE: "11" will not be printed
+    print(f"X is: {x}")
+
+print("===========================")
+
+#=======================================================
+# Reverse Range
+for counter in reversed(range(1, 11)):
+    print(counter)
+
+#=======================================================
+# Add Step in Range
+print("===========================")
+for z in range(1, 11, 2):
+    print(z)
+
+#=====================================================
+# iterate over a "String"
+credit_Card = "HelloMohamed"    # Try to add a space between hello and mohamed , it will just print hello
+for y in credit_Card:
+    print(y)
+
+#=====================================================
+# Continue and Break
+for c in range(1, 15):  # if c = 13 then continue
+    if c == 13:
+        continue        # it will pass or skip the 13 number
+    else:
+        print(c)
+
+# break will exit from the whole loop
+for c in range(1, 20):
+    if c == 13:     #==> it will just print to 12
+        break
+    else: 
+        print(c)
+

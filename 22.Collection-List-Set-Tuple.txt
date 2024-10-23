@@ -1,0 +1,79 @@
+# Collection   =>   is a single "Variable" used to store Multiple Values
+# 
+# List  = []        ordered and Changeable.     Duplicates OK
+# Set   = {}        Unordered and Immutable, but Add/Remove OK.  No duplicates
+# Tuple = ()        Ordered and Unchangeable.   Duplicated OK.    Faster 
+
+
+#=============================================================================
+# 1) List []
+
+fruits = ["Apple", "Orange", "Banana", "Coconut"]
+print(fruits)
+print(fruits[1])    # print element number 2
+
+# To see All Methods used with List Collection use  dir() or use help() to know the function of every method too
+print( dir(fruits) )
+print( help(fruits) )
+
+print( len(fruits) )
+print("Apple" in fruits)       # This will return True or False, Check if apple is in fruits or not
+
+fruits[0] = "Mango"     # The first Element will be Mango not Apple (apple will be removed)
+
+for x in fruits:
+    print(x)
+
+# Append element       OR   Add element at the end of the List
+fruits.append("pineapple")
+for x in fruits:
+    print(x)
+
+# Insert    =>  Add element at the Gived Index
+fruits.insert(0, "rice")
+# sort the List
+fruits.sort()
+# reverse() => it will reverse the List , Not Alphabetical
+#           if you want to reverse it bu alphabetical, you need to "sort" it first then reverse it
+
+#index  =>  find the index of "Mango" element
+print(fruits.index("Mango"))
+
+# Clear()   => Delete all Elements
+fruits.clear()
+
+
+#==============================================================
+# Set   = {}        Unordered and Immutable, but Add/Remove OK.  "No duplicates"
+#       => immutable meands we Can't  Alter these Values, but can Add/Remove elements
+#       => also we "can't use Index" in Set  because it's  Unorderable
+set_fruit = {"Apple", "Orange", "Banana", "Coconut"}
+# Add Element in Set{}
+set_fruit.add("bano")
+for x in set_fruit:
+    print(x, end=", ")
+print()
+
+set_fruit.remove("Apple")   # remove Specific element "Apple"
+
+set_fruit.pop() # =>  pop() remove the first element
+
+for x in set_fruit:
+    print(x, end=", ")
+
+
+#===============================================================================
+# Tuple()   =>  Ordered and Unchangeable.  Duplicates OK.   Faster
+
+tuple_fruits = ("apple", "orange", "banana", "coconut","coconut")
+print(dir(tuple_fruits))
+print(help(tuple_fruits))
+print(len(tuple_fruits))
+
+print("pineapple" in tuple_fruits)
+print(tuple_fruits.index("apple"))
+
+print(tuple_fruits.count("coconut"))
+
+for x in tuple_fruits:
+    print(x)

@@ -1,0 +1,15 @@
+ # Logical Operators => Allow us to evaluate multiple condition  (or, and, not)
+#		or	=> at least one condition must be True
+#		and	=> both conditions must be True
+#		not	=> inverts the condition (not False, not True)
+
+
+temp = 25
+is_raining = True
+
+if temp > 35 or temp < 0 or is_raining:     #is_raining  =>(Equal) true
+    print("The outdoor event is Cancelled")
+else:
+    print("The outdoor event is still Scheduled")
+
+print(f"{is_raining} 😘😎")

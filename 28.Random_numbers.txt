@@ -1,0 +1,25 @@
+# Random Numbers
+
+import random
+# print( help(random) ) 
+
+
+# to set a range of random numbers  for ex.  ( Dice ) there are 6 possible
+number = random.randint(1, 6)
+print(number)
+
+# random.random() => to set a float random number
+float_number = random.random()
+print(float_number)
+
+# choise() => To get a random choise from options 
+options = ("Rock", "Paper", "Scissors")
+random_Option = random.choice(options)
+
+print(random_Option)
+
+# shuffle() => to shuffle   # NOOTE: The Shuffle() method will change the original data
+#               We printed the Cards itself, and it was shuffled 
+cards = ["2", "3", "4", "5", "6", "7", "8", "9" ,"J", "Q", "K", "A"]
+random.shuffle(cards)
+print(cards)
